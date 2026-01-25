@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Blog</title>
+        <style>
+        body{
+            font-family:serif;
+            font-size: 18px;
+        }
+        a{
+            text-decoration:none;
+            color:yellow;
+            background-color:blue;
+            line-height:1.5em;
+            font-weight:bold;
+        }
+        .story{
+            font-family:fantasy;
+            font-size: 13px;
+        }
+        #last{
+            font-style:italic;
+            font-family: monospace;
+            font-size:13px;
+        }
+       
+        </style>
+    </head>
+    <body>
+        
+        <h1>Kamila's blog</h1>
+
+        <h3>My Journey into Web Development</h3>
+        <ul>
+            <li><a href="#first">First steps into Web Development</a></li>
+            <li><a href="#second">Understanding HTML & CSS</a></li>
+        </ul>
+        
+        <h2 id="first">First steps into Web Development</h2>
+        <h6>Posted on January 2026</h6>
+        <p class="story">I have recently started learning web development, and this blog is a place where I document my journey.
+At first, everything felt confusing — HTML, CSS, tags, and strange symbols everywhere. But step by step, things started to make sense.<br><br>
+I learned that <strong>HTML</strong> is used to structure a web page. It helps the browser understand what is a heading, what is a paragraph, and what is a link.<br><br>
+This was my very first experience creating a real web page using only code, and it felt exciting.
+Learning something new can be challenging, but it is also very motivating. Every small progress makes me want to learn more.</p>
+        
+        <h2 id="second">Understanding HTML & CSS</h2>
+        <h6>Posted on January 2026</h6>
+        <p class="story">After understanding the basics of HTML, I moved on to CSS, which is responsible for how a website looks.
+CSS allows us to change colors, fonts, spacing, and layout of a web page.<br><br>
+I learned how to style text using different font families, font sizes, and font styles.<br>
+I also discovered how <strong>div</strong> and <strong>span</strong> elements help organize content and apply styles more easily.<br><br>
+<em id="ell">Now I understand that HTML and CSS work together:</em>
+<ul>
+    <li>HTML creates the structure</li>
+    <li>CSS makes it visually appealing</li>
+</ul>
+<p id="last">This knowledge is the foundation of front-end web development, and I am excited to continue learning more advanced topics in the future.</p>
+    </body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Links for learning</title>
+<style>
+        body{
+            background-color:rgb(242, 233, 242);
+        }
+        .steps{
+            background-color:pink;
+            color: rgb(87, 41, 204);
+        }
+        #tbl{
+            border: 4px solid yellow;
+            padding: 5px;
+            margin-top: 8px;
+        }
+        th{
+            border: 1px dashed black;
+            padding: 3px;
+            background-color:pink;
+        }
+        td{
+            border: 1px dashed black;
+            padding: 3px;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <!-- 1st -->
+        <h1>Links for learning</h1>
+        
+        <ul>
+            <li><a href="https://www.khanacademy.org/computing/computer-programming/html-css">Khan Academy</a></li>
+            <li><a href="https://www.w3schools.com/html/default.asp">W3schools</a></li>
+            <li><a href="https://www.udacity.com/course">Udacity</a></li>
+        </ul>
+
+        <a href="https://www.khanacademy.org/computing/computer-programming/html-css"><img src="https://www.kasandbox.org/programming-images/cute/Heart.png"></a>
+<!-- 2nd -->
+
+<h1 id="kangaroos">Kangaroos</h1>
+    
+    <p>Jump to sections: 
+        <a href="#locomotion">Locomotion</a>,
+        <a href="#diet">Diet</a>
+    </p>
+    <p>The <strong>kangaroo</strong> is a marsupial from the family Macropodidae (macropods, meaning 'large foot'). In common use the term is used to describe the largest species from this family, especially those of the genus Macropus, red kangaroo, antilopine kangaroo, eastern grey kangaroo and western grey kangaroo. Kangaroos are endemic to Australia, and one genus, the tree-kangaroo, is also found in Papua New Guinea.</p>
+
+    <p>Kangaroos have large, powerful hind legs, large feet adapted for leaping, a long muscular tail for balance, and a small head. Like most marsupials, female kangaroos have a pouch called a marsupium in which joeys complete postnatal development.</p>
+
+    <p>Larger kangaroos have adapted much better than smaller macropods to land clearing for pastoral agriculture and habitat changes brought to the Australian landscape by humans. Many of the smaller species are rare and endangered, whilst the larger kangaroos are relatively plentiful.</p>
+    
+    
+    <h3 id="locomotion">Locomotion</h3>
+    
+    <p>A Tasmanian forester (eastern grey) kangaroo in motion.
+Kangaroos are the only large animals to use hopping as a means of locomotion. The comfortable hopping speed for a red kangaroo is about 20–25 km/h (13–16 mph), but speeds of up to 70 km/h (44 mph) can be attained over short distances, while it can sustain a speed of 40 km/h (25 mph) for nearly 2 km (1.2 mi). This fast and energy-efficient method of travel has evolved because of the need to regularly cover large distances in search of food and water, rather than the need to escape predators. At slow speeds, it employs pentapedal locomotion, using its tail to form a tripod with its two forelimbs while bringing its hind feet forward. Kangaroos are adept swimmers, and often flee into waterways if threatened by a predator. If pursued into the water, a kangaroo may use its forepaws to hold the predator underwater so as to drown it.</p>
+
+    <h3 id="diet">Diet</h3>
+    
+    <p>Kangaroos have chambered stomachs similar to those of cattle and sheep. They regurgitate the vegetation they have eaten, chew it as cud, and then swallow it again for final digestion. Different species of kangaroos have different diets, although all are strict herbivores. The eastern grey kangaroo is predominantly a grazer, eating a wide variety of grasses, whereas some other species (e.g. the red kangaroo) include significant amounts of shrubs in their diets. The smaller species of kangaroos also consume hypogeal fungi. Many species are nocturnal, and crepuscular, usually spending the days resting in shade, and the cool evenings, nights and mornings moving about and feeding.</p>
+
+    <p>Because of its grazing habits, the kangaroo has developed specialized teeth. Its incisors are able to crop grass close to the ground, and its molars chop and grind the grass. Since the two sides of the lower jaw are not joined together, the lower incisors are farther apart, giving the kangaroo a wider bite. The silica in grass is abrasive, so kangaroo molars move forward as they are ground down, and eventually fall out, replaced by new teeth that grow in the back. This process is known as polyphyodonty and amongst other mammals, only occurs in elephants and manatees.</p>
+    
+    <p>
+    <a href="#kangaroos">kangaroos</a> |
+    <a href="http://en.wikipedia.org/wiki/Kangaroo">Read more on Wikipedia</a>
+    </p>
+<!-- 3rd -->
+ <h1>Our dinner menu</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Meal</th>
+                    <th>Ingredients</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pizza</td>
+                    <td>tomatoes,mozarella,mushrooms</td>
+                    <td>35$</td>
+                </tr>
+                <tr>
+                    <td>Pasta</td>
+                    <td>chicken,mushroom, tomatoes, penny</td>
+                    <td>40$</td>
+                </tr>
+                <tr>
+                    <td>Salad Ceaser</td>
+                    <td>tomatoes,salad,bread,boiled eggs,chicken, cheese parmezan</td>
+                    <td>26$</td>
+                </tr>
+            </tbody>
+        </table>
+
+<!-- 4th -->
+<h1>Kamila's Recipe Book</h1>
+        
+        <h2>Contents:</h2>
+        
+        <ol>
+            <li><a href="#1st">Pumpkin Cream Cheese Muffins</a></li>
+            <li><a href="#2nd">Beef And Broccoli</a></li>
+            <li><a href="#3rd">Sweet Cinnamon Donut Loaf</a></li>
+        </ol>
+        
+        <h2 id="1st">Pumpkin Cream Cheese Muffins</h2>
+        
+        <ul>
+            <li>Time: 45 min</li>
+            <li>Yield: 18 muffins</li>
+        </ul>
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Pumpkin_muffin_%2831373163026%29.jpg/2560px-Pumpkin_muffin_%2831373163026%29.jpg" width="350">
+        
+        <table id="tbl">
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Flour</td>
+                <td>1 3/4 cups</td>
+                
+            </tr>
+            <tr>
+                <td>Pumpkin spice</td>
+                <td>1 tablespoon</td>
+                
+            </tr>
+            <tr>
+                <td>Baking soda</td>
+                <td>1 teaspoon</td>
+                
+            </tr>
+            <tr>
+                <td>Salt</td>
+                <td>1/2 teaspoon</td>
+            </tr>
+            <tr>
+                <td>Pumpkin puree</td>
+                <td>15 oz</td>
+            </tr>
+            <tr>
+                <td>Granulated sugar</td>
+                <td>1 cup</td>
+            </tr>
+            <tr>
+                <td>Packed brown sugar</td>
+                <td>1/2 cup</td>
+            </tr>
+            <tr>
+                <td>Eggs</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Oil</td>
+                <td>1/2 cup</td>
+            </tr><tr>
+                <td>Vanilla extract</td>
+                <td>1 tablespoon</td>
+            </tr>
+            </tbody>
+        </table>
+        
+        <p class="steps"><strong>Step 1:</strong> Preheat the oven to 375°F. Line a muffin pan with 18 paper liners and set aside.
+</p>
+<p class="steps"><strong>Step 2:</strong> In a medium bowl, whisk together the flour, pumpkin spice, baking soda and salt until well combined. Set aside.
+</p>
+<p class="steps"><strong>Step 3:</strong> In a large bowl, whisk together the pumpkin, granulated sugar, brown sugar, eggs, oil, and vanilla.
+</p>
+<p class="steps"><strong>Step 4:</strong> Pour the dry ingredients into the wet ingredients and mix to combine. Do not over mix. Only mix until no pockets of the dry ingredients remain.
+</p>
+<p class="steps"><strong>Step 5:</strong> Divide the batter equally into the lined muffin pan, filling tins ¾ full.
+</p>
+<p class="steps"><strong>Step 6:</strong> Using an electric mixer in a small bowl, beat together the cream cheese, sugar, egg yolk and vanilla until smooth.
+</p><p class="steps"><strong>Step 7:</strong> Top each muffin with about a tablespoon of cream cheese mixture and use a toothpick to swirl it into the batter.
+</p>
+<p class="steps"><strong>Step 8:</strong> Bake the muffins for 18-20 minutes or until a toothpick inserted comes out clean.
+</p>
+<p class="steps"><strong>Step 9:</strong> Cool the muffins in the pans for 10 minutes before removing to cool on a cooling rack. Best served slightly warm.
+</p>
+
+        
+    <p><em>Source: <a href="https://www.amysrecipebook.com/pumpkin-cream-cheese-muffins/">Some recipes websites</a></em></p>
+    
+    <h2 id="2nd">Beef And Broccoli</h2>
+    <h2 id="3rd">Sweet Cinnamon Donut Loaf</h2>
+    </body>
+</html>

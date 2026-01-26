@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+    a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+  </style>
+</head>
+<body>
+
+<p>The pre tag preserves both spaces and line breaks:</p>
+
+<pre>
+   My Bonnie lies over the ocean.
+
+   My Bonnie lies over the sea.
+
+   My Bonnie lies over the ocean.
+   
+   Oh, bring back my Bonnie to me.
+</pre>
+
+  <p>Do not forget to buy <mark>milk</mark> today.</p>
+  <p>My favorite color is <del>blue</del> red.</p>
+  <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+  <p>This is <sub>subscripted</sub> text.</p>
+  <p>This is <sup>superscripted</sup> text.</p>
+
+  <p>Here is a quote from WWF's website:</p>
+
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+</blockquote>
+
+  <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+  <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<p>Marking up abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+  
+  <address>
+Written by John Doe.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+  <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p> <!--title of a work-->
+
+  <bdo dir="rtl">This text will be written from right to left</bdo>
+
+  <a href="mailto:someone@example.com">Send email</a> 
+  <!--se mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):-->
+
+  <button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+</body>
+</html>
+

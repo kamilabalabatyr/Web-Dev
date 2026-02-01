@@ -4,9 +4,9 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     background-color: #f0f2f5;
     color: #1c1e21;
-  }
+}
   
-  .page {
+.page {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -15,9 +15,9 @@ body {
     padding: 72px 20px;
     max-width: 980px;     
     margin: 0 auto;
-  }
+}
   
-  #logoarea {
+#logoarea {
     width: 500px;
   }
   
@@ -81,42 +81,46 @@ body {
     background: #166fe5;
   }
   
-  .forgot {
-    display: block;
+.forgot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
     text-align: center;
-    margin: 14px 0;
     font-size: 14px;
-    font-weight: 500;
-    color: #1877f2;
+    color: #166fe5;
     text-decoration: none;
-  }
+    font-weight: bold;
+}
   
-  .forgot:hover {
+.forgot:hover {
     text-decoration: underline;
-  }
+}
   
   
-  .divider {
+.divider {
     height: 1px;
     background: #dadde1;
     margin: 18px 0;
-  }
+}
   
   
-  .create-button {
-    display: block;
-    margin: 0 auto;
+  .create {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    border-radius: 10px;
     border: none;
-    border-radius: 6px;
-    padding: 12px 16px;
-    font-size: 17px;
-    font-weight: 700;
-    background: #42b72a;
-    color: #fff;
-    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    background: #39af21;
   }
   
-  .create-button:hover {
+  .create:hover {
     background: #36a420;
   }
   

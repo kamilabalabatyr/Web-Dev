@@ -267,6 +267,4 @@ let ask = (question, yes, no) => {
     if(confirm(question)) yes();
     else no();
 }
-ask('Do you agree?',
-    () => "You agreed.";
-    () => "You canceled the execution.";);  
+ask('Do you agree?', () => "You agreed.", () => "You canceled the execution.");  

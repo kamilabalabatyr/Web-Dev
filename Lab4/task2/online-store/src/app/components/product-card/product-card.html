@@ -1,0 +1,33 @@
+<div class="card">
+    <a class="img-wrap" [href]="product.link" target="_blank" rel="noopener">
+      <img [src]="product.image" [alt]="product.name" />
+    </a>
+  
+    <div class="content">
+      <a class="title" [href]="product.link" target="_blank" rel="noopener">
+        {{ product.name }}
+      </a>
+  
+      <p class="desc">{{ product.description }}</p>
+  
+      <div class="meta">
+        <span class="price">{{ product.price | number }} ₸</span>
+  
+        <span class="rating">
+          <span
+            class="star"
+            *ngFor="let s of getStars(product.rating)"
+            [class.filled]="s <= Math.round(product.rating)"
+            >★</span
+          >
+          <span class="badge">{{ product.rating }}</span>
+        </span>
+      </div>
+  
+      <div class="actions">
+        <button type="button" (click)="shareWhatsApp()">WhatsApp</button>
+        <button type="button" (click)="shareTelegram()">Telegram</button>
+      </div>
+    </div>
+  </div>
+  

@@ -1,5 +1,6 @@
-import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Component, input } from '@angular/core';
+
 
 
 @Component({
@@ -7,15 +8,11 @@ import { RouterOutlet } from '@angular/router';
   template: `Username: {{ username }}`,
 })
 export class User {
-  username = 'youngTech';
+  name = input<string>();
 }
 @Component({
   selector: 'app-root',
-  template: `
-  <div [contentEditable]="isEditable">
-    You can edit this text!
-  </div>
-`,
+  template: `<p>The user's name is {{ name() }}</p>`,
   imports: [User],
 })
 
@@ -35,4 +32,5 @@ export class App1 {
 export class App3 {
   isEditable = true;
 }
+
 

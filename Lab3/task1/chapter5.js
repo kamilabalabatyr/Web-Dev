@@ -544,12 +544,12 @@ function getWeekDay(date) {
 
   //JSON
 
-  let user = {
+  let user9 = {
     name: "John Smith",
     age: 35
   };
   
-  let user2 = JSON.parse(JSON.stringify(user));
+  let user2 = JSON.parse(JSON.stringify(user9));
   
 //NEXT
 let room = {

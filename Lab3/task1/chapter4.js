@@ -96,7 +96,7 @@ function makeUser() {
   alert( calculator.sum() );
   alert( calculator.mul() );
 
-  et ladder = {
+  let ladder9 = {
     step: 0,
     up() {
       this.step++;
@@ -161,8 +161,8 @@ function Calculator() {
     };
   }
   
-  let calculator = new Calculator();
-  calculator.read();
+  let calculator9 = new Calculator();
+  calculator9.read();
   
   alert( "Sum=" + calculator.sum() );
   alert( "Mul=" + calculator.mul() );

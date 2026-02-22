@@ -25,7 +25,7 @@ function createTodoItem(textValue) {
   });
 
   delBtn.addEventListener('click', () => {
-    list.removeChild(li); // requirement: removeChild
+    list.removeChild(li); 
   });
 
   li.appendChild(checkbox);
@@ -41,7 +41,7 @@ form.addEventListener('submit', (e) => {
   const value = input.value.trim();
   if (!value) return;
 
-  list.appendChild(createTodoItem(value)); // requirement: appendChild
+  list.appendChild(createTodoItem(value));
   input.value = '';
   input.focus();
 });

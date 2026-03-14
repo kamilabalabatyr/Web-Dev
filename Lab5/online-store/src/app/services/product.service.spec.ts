@@ -14,7 +14,6 @@ export class ProductService {
   ];
 
   products: Product[] = [
-    // сюда добавим 20 товаров (по 5 на категорию)
   ];
 
   getCategories(): Category[] {

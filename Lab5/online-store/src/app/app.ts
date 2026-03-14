@@ -40,7 +40,7 @@ export class App {
   
   sortByPriceDesc() {
     this.selectedProducts.sort((a, b) => b.price - a.price);
-  }
+  }  
 }
 
 

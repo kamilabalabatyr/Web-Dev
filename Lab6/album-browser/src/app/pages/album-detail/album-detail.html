@@ -1,0 +1,14 @@
+<h2>Album Detail</h2>
+
+<div *ngIf="loading">Loading...</div>
+
+<div *ngIf="album" class="detail-card">
+  <p><b>ID:</b> {{ album.id }}</p>
+  <p><b>User ID:</b> {{ album.userId }}</p>
+  <p><b>Title:</b> {{ album.title }}</p>
+
+  <div class="buttons">
+    <a [routerLink]="['/albums', album.id, 'photos']">View Photos</a>
+    <a routerLink="/albums">Back</a>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+.about-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+  }
+  
+  .about-card h2 {
+    color: #4f46e5;
+    margin-bottom: 15px;
+  }
+  
+  .about-card h3 {
+    margin-top: 25px;
+  }
+  
+  .about-card ul {
+    padding-left: 18px;
+  }

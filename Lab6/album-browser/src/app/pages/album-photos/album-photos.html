@@ -1,0 +1,18 @@
+<h2>Photos for album #{{ albumId$ | async }}</h2>
+
+<div *ngIf="photos$ | async as photos; else loadingBlock">
+  <p>Total photos: {{ photos.length }}</p>
+
+  <div class="grid">
+    <div class="card" *ngFor="let p of photos">
+        <img [src]="'https://picsum.photos/seed/' + p.id + '/150/150'" [alt]="p.title"/>
+      <div class="title">{{ p.title }}</div>
+    </div>
+  </div>
+
+  <a [routerLink]="['/albums', (albumId$ | async)]">← Back to Album</a>
+</div>
+
+<ng-template #loadingBlock>
+  <p>Loading...</p>
+</ng-template>

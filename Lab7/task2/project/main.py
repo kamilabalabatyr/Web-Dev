@@ -2,17 +2,21 @@ from models import Animal, Dog, Cat
 
 def main():
 
-    dog = Dog("Buddy", 3, "Brown", "Labrador")
-    cat = Cat("Luna", 2, "Black", True)
-    animal = Animal("Generic", 5, "Gray")
+    dog = Dog("Aqtos", 3, "Brown", "Labrador")
+    cat = Cat("Rex", 2, "Black", True)
 
-    animals = [dog, cat, animal]
+    animals = [dog, cat]
 
     for a in animals:
         print(a)          
         print(a.info())     
         print(a.speak())
-        print()
+        if a == dog:
+            print(dog.fetch())
+            print()
+        elif a == cat:
+            print(cat.scratch())
+            print()
 
 if __name__ == "__main__":
     main()

@@ -1,9 +1,5 @@
-from django.shortcuts import render
-
 from django.http import JsonResponse
-from django.views.decorations.csrf import csrf_exempt
 from .models import Product, Category
-import json
 
 def products_list(request):
     products = Product.objects.all()

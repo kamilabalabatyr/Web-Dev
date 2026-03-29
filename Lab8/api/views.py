@@ -12,11 +12,9 @@ def products_list(request):
             'description': product.description,
             'count': product.count,
             'is_active': product.is_active,
-            'category_id': product.category.id,
-            'category_name': product.category.name
+            'category': product.category.name
         })
     return JsonResponse(data, safe=False)
-
 
 def product_detail(request, id):
     try:
@@ -28,13 +26,11 @@ def product_detail(request, id):
             'description': product.description,
             'count': product.count,
             'is_active': product.is_active,
-            'category_id': product.category.id,
-            'category_name': product.category.name
+            'category': product.category.name
         }
         return JsonResponse(data)
     except Product.DoesNotExist:
-        return JsonResponse({'error': 'Product Not Found' }, status=404)
-
+        return JsonResponse({'error': 'Product not found'}, status=404)
 
 def categories_list(request):
     categories = Category.objects.all()
@@ -46,20 +42,18 @@ def categories_list(request):
         })
     return JsonResponse(data, safe=False)
 
-
-def category(request, id):
+def category_detail(request, id):
     try:
         category = Category.objects.get(id=id)
         data = {
-            id': category.id,
+            'id': category.id,
             'name': category.name
         }
         return JsonResponse(data)
     except Category.DoesNotExist:
-        return JsonResponse({'error': 'Category Not Found' }, status=404)
+        return JsonResponse({'error': 'Category not found'}, status=404)
 
-
-def category_by_products(request, id):
+def category_products(request, id):
     try:
         category = Category.objects.get(id=id)
         products = category.products.all()
@@ -72,9 +66,8 @@ def category_by_products(request, id):
                 'description': product.description,
                 'count': product.count,
                 'is_active': product.is_active,
-                'category_id': product.category.id,
-                'category_name': product.category.name
+                'category': product.category.name
             })
-        return JsonResponse (data, safe=False)
+        return JsonResponse(data, safe=False)
     except Category.DoesNotExist:
-        return JsonResponse({'error': 'Category Not Found' }, status=404)
+        return JsonResponse({'error': 'Category not found'}, status=404)

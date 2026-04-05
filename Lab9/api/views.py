@@ -10,7 +10,6 @@ class CategoryViewSet(viewsets.ModelViewSet):
     
     @action(detail=True, methods=['get'])
     def products(self, request, pk=None):
-        """Получить все продукты в категории"""
         category = self.get_object()
         products = category.products.all()
         serializer = ProductSerializer(products, many=True)
